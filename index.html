@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Indice mamalon</title>
+    <style>
+        body{
+            background-image: url("imagenes/index/fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Century Gothic';
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            font-size: 30px;
+            color: rgb(68, 0, 255);
+            text-shadow: 0 0 20px rgb(0, 4, 255);
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-shadow: 0 0 20px rgb(83, 0, 238);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(238, 255, 0);
+        }
+        h1{
+            text-align: center;
+            color: rgb(60, 255, 0);
+            text-shadow: 0 0 20px rgb(246, 255, 117); 
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+        }
+            
+    </style>
+</head>
+<body>
+    <h1><b>Programación Parcial 1</b></h1>
+    <div style="text-align: center;">
+        <b style="font-size: 30px;">
+            <br>
+            <a href="JavaScript.html" onmouseover="elbicho('1')" onmouseout="nobicho()"> → JavaScript ← </a><br>
+            <a href="Jquery.html" onmouseover="elbicho('2')" onmouseout="nobicho()"> → Jquery ← </a><br>
+            <a href="JqueryMobile.html" onmouseover="elbicho('3')" onmouseout="nobicho()"> → JqueryMobile ← </a><br>
+            <a href="Loteria.html" onmouseover="elbicho('4')" onmouseout="nobicho()"> → Loteria ← </a><br>
+        </b>
+    </div>
+    <footer>Perez Ochoa Juan Pablo 6AVP</footer>
+</body>
+</html>
+
+<script>
+    function elbicho( x ){
+        if( x == 1){
+            document.body.style.backgroundImage = 'URL("imagenes/index/fondo1.webp")';
+        }else if(x == 2){
+            document.body.style.backgroundImage = 'URL("imagenes/index/fondo2.webp")';
+        }else if(x == 3){
+            document.body.style.backgroundImage = 'URL("imagenes/index/fondo3.jpg")';
+        }else if(x == 4){
+            document.body.style.backgroundImage = 'URL("imagenes/index/fondo4.jpg")';
+        }
+    }
+    function nobicho(){
+        document.body.style.backgroundImage = 'URL("imagenes/index/fondo.jpg")';
+    }
+</script>
